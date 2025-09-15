@@ -28,7 +28,19 @@ export const workType = defineType({
       title: 'Role',
       type: 'array',
       of: [{type: 'string'}],
-      options: {layout: 'tags'},
+      options: {
+        layout: 'grid',
+        list: [
+          {title: 'Development', value: 'Development'},
+          {title: 'Design', value: 'Design'},
+          {title: 'Marketing', value: 'Marketing'},
+          {title: 'SEO', value: 'SEO'},
+          {title: 'Consulting', value: 'Consulting'},
+          {title: 'Project Management', value: 'Project Management'},
+          {title: 'eCommerce', value: 'eCommerce'},
+          {title: 'UI/UX', value: 'UI/UX'},
+        ],
+      },
     }),
     defineField({
       name: 'year',
