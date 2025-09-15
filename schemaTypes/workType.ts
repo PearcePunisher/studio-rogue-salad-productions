@@ -45,7 +45,16 @@ export const workType = defineType({
       title: 'Tags',
       type: 'array',
       of: [{type: 'string'}],
-      options: {layout: 'tags'},
+      options: {
+        layout: 'grid',
+        list: [
+          {title: 'WordPress', value: 'WordPress'},
+          {title: 'Oxygen Builder', value: 'Oxygen Builder'},
+          {title: 'NextJS', value: 'NextJS'},
+          {title: 'Kinsta', value: 'Kinsta'},
+          {title: 'Advanced Custom Fields', value: 'Advanced Custom Fields'},
+        ],
+      },
     }),
     defineField({
       name: 'summary',
